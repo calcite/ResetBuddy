@@ -8,7 +8,7 @@ Created on Thu May 12 10:20:54 2016
 from mcp2210 import MCP2210
 import time
 
-class RBUDDY(object):
+class RBUDDY(object): 
     def __init__(self):
         """inicialization of MCP2210 main chip which allow communication from system to display"""
         VID = 0x04D8
