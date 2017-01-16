@@ -1,3 +1,15 @@
+RESET BUDDY 
+==============
+This device provides 9 relay outputs with a current rating up to 5A each. It can be fully powered and controlled by standard USB bus. Green LED mounted right next to corresponding relay indicates its state.
+
+connector: 	USB mini type B
+		Pluggable screw terminal AWG 16 - 26 
+
+Board designed with KiCad 4.0.2
+
+Box designed with freecad, based on HAMMOND 1455L1202
+
+
 Controlling MCP2210:
 
 Installation of lib_usb which in needed for running MCP2210
