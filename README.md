@@ -1,4 +1,4 @@
-RESET BUDDY 
+﻿RESET BUDDY
 ==============
 This device provides 9 relay outputs with a current rating up to 5A each. It can be fully powered and controlled by standard USB bus. Green LED mounted right next to corresponding relay indicates its state.
 
@@ -58,3 +58,4 @@ python RB_utility.py r 9 x –t 1	//sets pin 9 for 1 second, then clears it
 python RB_utility.py crazy! x x 	//just try it ;) 
 
 *
+love is all around us
