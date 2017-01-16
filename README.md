@@ -57,4 +57,4 @@ python RB_utility.py r 9 x –t 1	//sets pin 9 for 1 second, then clears it
 
 python RB_utility.py crazy! x x 	//just try it ;) 
 
-*
+****
