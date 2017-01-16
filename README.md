@@ -28,10 +28,10 @@ run python script with paramethers. Syntax is:
 python RB_utility.py <operation><pin><state>[time]	parameter time is not obligatory
 
 supported operations: 	
-- set = s		– sets or clears pin (puts the pin into state 0 or 1)
-- get = g	– reads state of pin
-- reset = r	– sets pin for time (in seconds), then clears it
-- rev_reset = rev – opposite of reset
+- set = s		â€“ sets or clears pin (puts the pin into state 0 or 1)
+- get = g	â€“ reads state of pin
+- reset = r	â€“ sets pin for time (in seconds), then clears it
+- rev_reset = rev â€“ opposite of reset
 - clearall = c	- clears all pins
 - test = t	- visual test
 - crazy! 		- even better test
@@ -42,12 +42,12 @@ allowed pin inputs: 1,2,3,4,5,6,7,8,9,all,a,x	(a = all, x for operations without
 
 allowed state iputs: 0,1,x			(x for operations without state input)
 
-time parameter only for reset operation. You must put –t ahead of the parameter itself
+time parameter only for reset operation. You must put â€“t ahead of the parameter itself
 
 
 examples:
-python RB_utility.py set 1 1	//sets pin 1 into logic 1
-python RB_utility.py r 9 x –t 1	//sets pin 9 for 1 second, then clears it
+python RB_utility.py set 1 1	//sets pin 1 into logic 1 \n
+python RB_utility.py r 9 x â€“t 1	//sets pin 9 for 1 second, then clears it 
 python RB_utility.py crazy! x x 	//just try it ;) 
 
 *
