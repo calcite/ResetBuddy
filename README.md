@@ -23,6 +23,8 @@ $pip3 install hidapi
 Testing can be made with microchip utility: http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2210Utility_v1.2.2.zip
 Full control can be reached with utility attached to this project (RB utility).
 
+
+
 RB utility control:
 run python script with paramethers. Syntax is:
 python RB_utility.py <operation><pin><state>[time]	parameter time is not obligatory
@@ -45,9 +47,14 @@ allowed state iputs: 0,1,x			(x for operations without state input)
 time parameter only for reset operation. You must put –t ahead of the parameter itself
 
 
+
+
 examples:
-python RB_utility.py set 1 1	//sets pin 1 into logic 1 \n
+
+python RB_utility.py set 1 1	//sets pin 1 into logic 1
+
 python RB_utility.py r 9 x –t 1	//sets pin 9 for 1 second, then clears it 
+
 python RB_utility.py crazy! x x 	//just try it ;) 
 
 *
