@@ -1,0 +1,32 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FER
+D Ferrit filter
+K R DEV
+$ENDCMP
+#
+$CMP IM03DGR
+D Relay  5Vcoil, 250Vdc, 5A, 
+$ENDCMP
+#
+$CMP NTR4003N
+D Id, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET Logic Level
+F http://www.fairchildsemi.com/ds/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP OJE-SS-105HM,000
+D Relay  5Vcoil, 30Vdc, 3A,
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R DEV
+$ENDCMP
+#
+$CMP USB_OTG
+D micro/mini connector
+K USB USB_OTG USB_mini USB_micro
+$ENDCMP
+#
+#End Doc Library

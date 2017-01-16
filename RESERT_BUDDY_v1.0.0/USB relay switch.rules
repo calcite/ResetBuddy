@@ -1,0 +1,153 @@
+
+(rules PCB USB relay switch
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 5070)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 200.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 500.2 (type default_POWER))
+    (clear 300.2 (type default_"VCC GND"))
+    (clear 50.0 (type smd_smd))
+    (clear 500.2 (type smd_POWER))
+    (clear 300.2 (type smd_"VCC GND"))
+    (clear 500.2 (type "kicad_default"_POWER))
+    (clear 300.2 (type "kicad_default"_"VCC GND"))
+    (clear 500.2 (type POWER_POWER))
+    (clear 500.2 (type POWER_"VCC GND"))
+    (clear 300.2 (type "VCC GND"_"VCC GND"))
+  )
+  (padstack "Via[0-1]_900:600_um"
+    (shape
+      (circle F.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 900.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1300:1000_um"
+    (shape
+      (circle F.Cu 1300.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1300.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_900:600_um" "Via[0-1]_900:600_um" default
+  )
+  (via 
+    "Via[0-1]_1300:1000_um" "Via[0-1]_1300:1000_um" default
+  )
+  (via 
+    "Via[0-1]_900:600_um-kicad_default" "Via[0-1]_900:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1300:1000_um-kicad_default" "Via[0-1]_1300:1000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_900:600_um-POWER" "Via[0-1]_900:600_um" POWER
+  )
+  (via 
+    "Via[0-1]_1300:1000_um-POWER" "Via[0-1]_1300:1000_um" POWER
+  )
+  (via 
+    "Via[0-1]_900:600_um-VCC GND" "Via[0-1]_900:600_um" "VCC GND"
+  )
+  (via 
+    "Via[0-1]_1300:1000_um-VCC GND" "Via[0-1]_1300:1000_um" "VCC GND"
+  )
+  (via_rule
+    default "Via[0-1]_900:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_900:600_um-kicad_default"
+  )
+  (via_rule
+    POWER "Via[0-1]_1300:1000_um-POWER"
+  )
+  (via_rule
+    "VCC GND" "Via[0-1]_900:600_um-VCC GND"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" "Net-(Q4-Pad1)" "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(D13-Pad2)" "Net-(Q7-Pad1)"
+    "Net-(D14-Pad2)" "Net-(Q8-Pad1)" "Net-(D17-Pad2)" "Net-(Q9-Pad1)" "Net-(D18-Pad2)" "Net-(C1-Pad1)" "Net-(C1-Pad2)" "Net-(C3-Pad1)"
+    "Net-(D1-Pad1)" /SW2 "Net-(D3-Pad1)" /SW3 "Net-(D4-Pad1)" /SW1 "Net-(D7-Pad1)" /SW4
+    "Net-(D9-Pad1)" "Net-(IC1-Pad2)" "Net-(IC1-Pad3)" "Net-(IC1-Pad4)" "Net-(IC1-Pad9)" /SW5 "Net-(IC1-Pad11)" /SW6
+    "Net-(IC1-Pad13)" /SW7 /SW8 /SW9 "/USB_D-" "/USB_D+" "Net-(L1-Pad2)" "Net-(L2-Pad2)"
+    "Net-(REL1-Pad2)" "Net-(REL1-Pad7)" "Net-(REL2-Pad2)" "Net-(REL2-Pad7)" "Net-(REL3-Pad2)" "Net-(REL3-Pad7)" "Net-(REL4-Pad2)" "Net-(REL4-Pad7)"
+    "Net-(REL5-Pad2)" "Net-(REL5-Pad7)" "Net-(REL6-Pad2)" "Net-(REL6-Pad7)" "Net-(REL7-Pad2)" "Net-(REL7-Pad7)" "Net-(REL8-Pad2)" "Net-(REL8-Pad7)"
+    "Net-(REL9-Pad2)" "Net-(REL9-Pad7)" "Net-(REL1-Pad3)" "Net-(REL1-Pad4)" "Net-(REL2-Pad3)" "Net-(REL2-Pad4)" "Net-(REL3-Pad3)" "Net-(REL3-Pad4)"
+    "Net-(REL4-Pad3)" "Net-(REL4-Pad4)" "Net-(REL5-Pad3)" "Net-(REL5-Pad4)" "Net-(REL6-Pad3)" "Net-(REL6-Pad4)" "Net-(REL7-Pad3)" "Net-(REL7-Pad4)"
+    "Net-(REL8-Pad3)" "Net-(REL8-Pad4)" "Net-(REL9-Pad3)" "Net-(REL9-Pad4)" /GP4 /GP5 /GP6 /GP7
+    /GP8 "Net-(P11-Pad4)" "Net-(D2-Pad1)" "Net-(D5-Pad1)" "Net-(D6-Pad1)" "Net-(D8-Pad1)" "Net-(D11-Pad2)" "Net-(D12-Pad2)"
+    "Net-(D15-Pad2)" "Net-(D16-Pad2)" "Net-(D19-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class POWER
+    "Net-(P2-Pad1)" "Net-(P2-Pad2)" "Net-(P3-Pad1)" "Net-(P3-Pad2)" "Net-(P4-Pad1)" "Net-(P4-Pad2)" "Net-(P5-Pad1)" "Net-(P5-Pad2)"
+    "Net-(P7-Pad1)" "Net-(P7-Pad2)" "Net-(P8-Pad1)" "Net-(P8-Pad2)" "Net-(P1-Pad1)" "Net-(P1-Pad2)" "Net-(P6-Pad1)" "Net-(P6-Pad2)"
+    "Net-(P9-Pad1)" "Net-(P9-Pad2)"
+    (clearance_class POWER)
+    (via_rule POWER)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "VCC GND"
+    GND +5V
+    (clearance_class "VCC GND")
+    (via_rule VCC GND)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
