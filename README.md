@@ -44,4 +44,6 @@ For some operations there is no need for all other parameters but you always hav
 examples:
 python RB_utility.py set 1 1	//sets pin 1 into logic 1
 python RB_utility.py r 9 x –t 1	//sets pin 9 for 1 second, then clears it 
-python RB_utility.py crazy! x x 	//just try it ;)
+python RB_utility.py crazy! x x 	//just try it ;) 
+
+*
