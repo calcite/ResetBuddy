@@ -26,7 +26,7 @@ Full control can be reached with utility attached to this project (RB utility).
 RB utility control:
 run python script with paramethers. Syntax is:
 python RB_utility.py <operation><pin><state>[time]	parameter time is not obligatory
-+ supportedoperations: 	
+supportedoperations: 	
 - set = s		– sets or clears pin (puts the pin into state 0 or 1)
 - get = g	– reads state of pin
 - reset = r	– sets pin for time (in seconds), then clears it
@@ -37,9 +37,9 @@ python RB_utility.py <operation><pin><state>[time]	parameter time is not obligat
 
 For some operations there is no need for all other parameters but you always have to put them in (poor programming skills). 
 
-+ allowed pin inputs: 1,2,3,4,5,6,7,8,9,all,a,x	(a = all, x for operations without pin input)
-+ allowed state iputs: 0,1,x			(x for operations without state input)
-+ time parameter only for reset operation. You must put –t ahead of the parameter itself
+allowed pin inputs: 1,2,3,4,5,6,7,8,9,all,a,x	(a = all, x for operations without pin input)
+allowed state iputs: 0,1,x			(x for operations without state input)
+time parameter only for reset operation. You must put –t ahead of the parameter itself
 
 examples:
 python RB_utility.py set 1 1	//sets pin 1 into logic 1
