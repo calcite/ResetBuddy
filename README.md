@@ -13,12 +13,14 @@ Box designed with freecad, based on HAMMOND 1455L1202
 Controlling MCP2210:
 
 Installation of lib_usb which in needed for running MCP2210
+```
 $apt-get update
 $apt-get upgrade
 $apt-get install python3-dev
 $apt-get install cython3
 $apt-get install libusb-1.0.0 libusb-1.0.0-dev libudev-dev
 $pip3 install hidapi
+```
 
 Testing can be made with microchip utility: http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2210Utility_v1.2.2.zip
 Full control can be reached with utility attached to this project (RB utility).
@@ -50,13 +52,11 @@ time parameter only for reset operation. You must put –t ahead of the paramete
 
 
 examples:
-
+```
 python RB_utility.py set 1 1	//sets pin 1 into logic 1
-
 python RB_utility.py r 9 x –t 1	//sets pin 9 for 1 second, then clears it 
-
 python RB_utility.py crazy! x x 	//just try it ;) 
-
+```
 
 love is all around us
 
